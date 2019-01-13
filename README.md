@@ -1,23 +1,18 @@
-### filter()
+### Natural Language Processing - sentiment classification
 
-filter() method filters each element in the given iterable with the given function. It tests each element with the function and outputs those that satisy the condition in function
+-> Natural Language Processing (NLP) is that branch of AI which deals with learning of computers on how to process and analyze large amounts of natural language data  
 
-Syntax: filter(func, iter)
+-> Sentiment classification is a classification process based on the subjective sentimental opinions given in the form of text
 
-func: it is the function to which filter passes each element of given iterable  
-iter: it is the iterable which is to be filtered  
+-> 1000 reviews for a restaurant is given as dataset
 
--> The result of filter() function can be passed to list() and set()  
--> Can use lambda expressions along with filter()  
--> An iterable is something that can be looped over and its definition requires implementation of __iter__() and __next__() methods  
--> An iterator is an object that remembers its state and is created by applying the iter() method on the iterable. The next value in the iteration can be obtained using next() method  
+-> The objective of the exercise is to classify whether a review is positive or negative, after training with the given dataset  
 
-Executing instructions: 
-1) Fork the repository
-2) Create a local copy of the repo
-3) Navigate into the directory containing filter_lambda.py from terminal or command line
-4) Ensure to have python installed and is added to system path
-5) Execute using this command: python filter_lambda.py
+Steps: 
+1) Cleaning the texts   
+2) Creating Bag of Words model  
+3) Splitting the dataset into training (80%) and test (20%) sets  
+4) Fitting Naive-Bayes classifier to the training set  
+5) Predicting the test set result  
+6) Making the confusion matrix  
 
-
-https://www.geeksforgeeks.org/filter-in-python/, http://book.pythontips.com/en/latest/map_filter.html, https://www.programiz.com/python-programming/methods/built-in/filter, https://www.w3schools.com/python/python_iterators.asp, https://stackoverflow.com/questions/9884132/what-exactly-are-iterator-iterable-and-iteration
